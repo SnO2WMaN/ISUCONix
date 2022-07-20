@@ -40,10 +40,15 @@
           ];
         };
       in (rec {
-          packages = with pkgs; {
-            alp = alp;
-            lltsv = lltsv;
-          };
+          packages = builtins.listToAttrs (
+            map (name: {
+              inherit name;
+              value = pkgs.${name};
+            }) [
+              "alp"
+              "lltsv"
+            ]
+          );
           checks = packages;
         }
         // {

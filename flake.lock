@@ -97,12 +97,30 @@
         "type": "github"
       }
     },
+    "pkgs-alp": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657505575,
+        "narHash": "sha256-fcerGECghSYKB0O+zDyJy5GeAlAGIMshApk7rb52HVg=",
+        "owner": "tkuchiki",
+        "repo": "alp",
+        "rev": "ffc51a2f58fe4703c3f904a421cc0978b71e9a76",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tkuchiki",
+        "ref": "v1.0.10",
+        "repo": "alp",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "devshell": "devshell",
         "flake-compat": "flake-compat",
         "flake-utils": "flake-utils_2",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_2",
+        "pkgs-alp": "pkgs-alp"
       }
     }
   },

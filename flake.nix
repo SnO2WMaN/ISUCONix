@@ -13,6 +13,10 @@
       url = "github:tkuchiki/alp/v1.0.10";
       flake = false;
     };
+    pkgs-lltsv = {
+      url = "github:sonots/lltsv/v0.7.0";
+      flake = false;
+    };
   };
 
   outputs = {
@@ -38,6 +42,7 @@
       in (rec {
           packages = with pkgs; {
             alp = alp;
+            lltsv = lltsv;
           };
           checks = packages;
         }

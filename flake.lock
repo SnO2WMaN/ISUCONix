@@ -114,13 +114,31 @@
         "type": "github"
       }
     },
+    "pkgs-lltsv": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1605161016,
+        "narHash": "sha256-pjsgE7XfmrliToYYNEl06AL40xNj2M3eYcfAGTc9RgA=",
+        "owner": "sonots",
+        "repo": "lltsv",
+        "rev": "da120017cd0ce855998eb6fbe78706b904243ae1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sonots",
+        "ref": "v0.7.0",
+        "repo": "lltsv",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "devshell": "devshell",
         "flake-compat": "flake-compat",
         "flake-utils": "flake-utils_2",
         "nixpkgs": "nixpkgs_2",
-        "pkgs-alp": "pkgs-alp"
+        "pkgs-alp": "pkgs-alp",
+        "pkgs-lltsv": "pkgs-lltsv"
       }
     }
   },
